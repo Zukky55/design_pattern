@@ -1,0 +1,11 @@
+@startuml
+scale 2
+class UseSingleton {
+    {static} instance : UseSingleton
+    {static} lockObj : object
+    instanceID : int
+    - UseSingleton()
+    + {static} GetInstance() : UseSingleton
+    + GetInstanceID() : int
+}
+@enduml
