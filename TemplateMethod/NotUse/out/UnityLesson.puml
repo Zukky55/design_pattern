@@ -1,0 +1,8 @@
+@startuml
+class UnityLesson {
+    - cSharpLesson : CSharpLesson
+    + Lecture() : void
+    + Test() : void
+    + ResultsAnnounce() : void
+}
+@enduml

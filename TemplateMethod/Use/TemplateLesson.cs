@@ -1,4 +1,4 @@
-namespace TemplateMethod
+namespace TemplateMethod.Use
 {
     public abstract class TemplateLesson
     {

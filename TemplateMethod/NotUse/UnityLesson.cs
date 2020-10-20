@@ -1,11 +1,11 @@
 using System;
 
-namespace TemplateMethod.Use
+namespace TemplateMethod.NotUse
 {
-    public class UnityLesson : TemplateLesson
+    public class UnityLesson
     {
         private CSharpLesson cSharpLesson = new CSharpLesson();
-        public override void Lecture()
+        public  void Lecture()
         {
             Console.WriteLine($"=====");
             Console.WriteLine($"Unityのレッスンしまーす。まずはC#のレッスンしてもらいますー。");
@@ -14,14 +14,14 @@ namespace TemplateMethod.Use
             Console.WriteLine($"Unityレクチャー中...");
         }
 
-        public override void Test()
+        public  void Test()
         {
             Console.WriteLine($"=====");
             Console.WriteLine($"出来る様になったかテストしますー。C#の後はUnity。");
             cSharpLesson.Test();
             Console.WriteLine($"Unityテスト中...");
         }
-        public override void ResultsAnnounce()
+        public  void ResultsAnnounce()
         {
             Console.WriteLine($"=====");
             Console.WriteLine($"C#とUnityの結果を発表しますー.");

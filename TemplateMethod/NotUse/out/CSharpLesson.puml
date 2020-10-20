@@ -1,0 +1,7 @@
+@startuml
+class CSharpLesson {
+    + Lecture() : void
+    + Test() : void
+    + ResultsAnnounce() : void
+}
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class UnrealEngineLesson {
+    - cppLesson : CppLesson
+    + <<override>> Lecture() : void
+    + <<override>> Test() : void
+    + <<override>> ResultsAnnounce() : void
+}
+TemplateLesson <|-- UnrealEngineLesson
+@enduml

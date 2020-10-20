@@ -1,0 +1,8 @@
+@startuml
+abstract class TemplateLesson {
+    + ConductLesson() : void
+    + {abstract} Lecture() : void
+    + {abstract} Test() : void
+    + {abstract} ResultsAnnounce() : void
+}
+@enduml

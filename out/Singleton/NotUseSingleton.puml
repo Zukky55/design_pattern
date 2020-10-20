@@ -1,0 +1,7 @@
+@startuml
+class NotUseSingleton {
+    instanceID : int
+    + NotUseSingleton()
+    + GetInstanceID() : int
+}
+@enduml

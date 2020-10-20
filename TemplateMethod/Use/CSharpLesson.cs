@@ -1,26 +1,20 @@
 using System;
 
-namespace TemplateMethod
+namespace TemplateMethod.Use
 {
     public class CSharpLesson : TemplateLesson
     {        public override void Lecture()
         {
-            Console.WriteLine($"=====");
-            Console.WriteLine($"C#のレッスンしまーす。");
-            Console.WriteLine($"C#レクチャー中...");
+            Console.WriteLine($"C#のレッスン");
         }
 
         public override void Test()
         {
-            Console.WriteLine($"=====");
-            Console.WriteLine($"出来る様になったかテストしますー。");
-            Console.WriteLine($"C#テスト中...");
+            Console.WriteLine($"C#テスト");
         }
         public override void ResultsAnnounce()
         {
-            Console.WriteLine($"=====");
-            Console.WriteLine($"C#の結果を発表しますー.");
-            Console.WriteLine($"C#は全員合格!素晴らしい！");
+            Console.WriteLine($"C#の結果を発表.");
         }
     }
 }

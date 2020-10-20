@@ -1,12 +1,12 @@
 using System;
 
-namespace TemplateMethod.Use
+namespace TemplateMethod.NotUse
 {
-    public class UnrealEngineLesson : TemplateLesson
+    public class UnrealEngineLesson 
     {        
         private CppLesson cppLesson = new CppLesson();
         
-        public override void Lecture()
+        public void Teach()
         {
             Console.WriteLine($"=====");
             Console.WriteLine($"UEのレッスンしまーす。まずはC++のレッスンしてもらいますー。");
@@ -15,14 +15,14 @@ namespace TemplateMethod.Use
             Console.WriteLine($"UEレクチャー中...");
         }
 
-        public override void Test()
+        public void Test()
         {
             Console.WriteLine($"=====");
             Console.WriteLine($"出来る様になったかテストしますー。C++の後はUE。");
             cppLesson.Test();
             Console.WriteLine($"UEテスト中...");
         }
-        public override void ResultsAnnounce()
+        public  void ResultsAnnounce()
         {
             Console.WriteLine($"=====");
             Console.WriteLine($"C++とUEの結果を発表しますー.");

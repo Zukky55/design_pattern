@@ -1,6 +1,7 @@
 ﻿using System;
 using Singleton;
-using TM = TemplateMethod;
+using UseTM = TemplateMethod.Use;
+using NotUseTM = TemplateMethod.NotUse;
 
 class DesignPattern
 {
@@ -14,11 +15,24 @@ class DesignPattern
     }
 
     private void ExampleTemplateMethod(){
-        TM.UnityLesson unityLesson = new TM.UnityLesson();
-        unityLesson.ConductLesson();
 
-        TM.UnrealEngineLesson ueLesson = new TM.UnrealEngineLesson();
-        ueLesson.ConductLesson();
+        NotUseTM.UnityLesson rookieUnityTeacher = new NotUseTM.UnityLesson();
+        rookieUnityTeacher.Lecture();
+        rookieUnityTeacher.Test();
+        rookieUnityTeacher.ResultsAnnounce();
+
+        NotUseTM.UnrealEngineLesson rookieUeTeacher = new NotUseTM.UnrealEngineLesson();
+        rookieUeTeacher.Teach(); // 名称が違ったり
+        // notUseUeLesson.Test(); // テストし忘れていたりして安定的な授業を提供できない。
+        rookieUeTeacher.ResultsAnnounce();
+            
+
+        // 授業のフローのテンプレートが存在する為、
+        UseTM.UnityLesson rookieUnityTeacher2 = new UseTM.UnityLesson();
+        rookieUnityTeacher2.ConductLesson(); 
+
+        UseTM.UnrealEngineLesson rookieUeTeacher = new UseTM.UnrealEngineLesson();
+        rookieUeTeacher.ConductLesson();
     }
 
     private void ExampleSingleton(){

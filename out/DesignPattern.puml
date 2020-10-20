@@ -1,0 +1,7 @@
+@startuml
+class DesignPattern {
+    {static} Main(args:string[]) : void
+    - ExampleTemplateMethod() : void
+    - ExampleSingleton() : void
+}
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+!include .\\.\DesignPattern.puml
+!include .\\.\Singleton\NotUseSingleton.puml
+!include .\\.\Singleton\UseSingleton.puml
+!include .\\.\TemplateMethod\NotUse\CppLesson.puml
+!include .\\.\TemplateMethod\NotUse\CSharpLesson.puml
+!include .\\.\TemplateMethod\NotUse\RookieTeacher.puml
+!include .\\.\TemplateMethod\NotUse\UnityLesson.puml
+!include .\\.\TemplateMethod\NotUse\UnrealEngineLesson.puml
+!include .\\.\TemplateMethod\Use\CppLesson.puml
+!include .\\.\TemplateMethod\Use\CSharpLesson.puml
+!include .\\.\TemplateMethod\Use\RookieTeacher.puml
+!include .\\.\TemplateMethod\Use\TemplateLesson.puml
+!include .\\.\TemplateMethod\Use\UnityLesson.puml
+!include .\\.\TemplateMethod\Use\UnrealEngineLesson.puml
+!include .\\.\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.puml
+!include .\\.\obj\Debug\netcoreapp3.1\design_pattern_practice.AssemblyInfo.puml
+@enduml

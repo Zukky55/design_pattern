@@ -1,0 +1,7 @@
+@startuml
+class RookieTeacher {
+    - ueLesson : UnrealEngineLesson
+    - cppLesson : CppLesson
+    + Teach() : void
+}
+@enduml
