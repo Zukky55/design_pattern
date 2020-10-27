@@ -1,9 +1,0 @@
-@startuml
-class UnityLesson {
-    - cSharpLesson : CSharpLesson
-    + <<override>> Lecture() : void
-    + <<override>> Test() : void
-    + <<override>> ResultsAnnounce() : void
-}
-TemplateLesson <|-- UnityLesson
-@enduml

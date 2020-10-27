@@ -1,8 +1,6 @@
 @startuml
 class UnrealEngineLesson {
-    - cppLesson : CppLesson
     + Teach() : void
     + Test() : void
-    + ResultsAnnounce() : void
 }
 @enduml

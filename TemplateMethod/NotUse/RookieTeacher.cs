@@ -2,18 +2,18 @@ namespace TemplateMethod.NotUse
 {
     public class RookieTeacher
     {
-        private UnrealEngineLesson ueLesson;
-        private CppLesson cppLesson;
-
         public void Teach(){
             // cppの授業
+            var cppLesson = new CppLesson();
             cppLesson.Lecture();
-            cppLesson.Test();
+            // テストし忘れ
+            // cppLesson.Test(); 
             cppLesson.ResultsAnnounce();
             // ueの授業
-            ueLesson.Lecture();
+            var ueLesson = new UnrealEngineLesson();
+            ueLesson.Teach(); // なんか名前違う。中身は同じ処理なのか？
             ueLesson.Test();
-            ueLesson.ResultsAnnounce();
+            // ueLesson.ResultsAnnounce(); // 結果通知の処理が存在しない。
         }
     }
 }

@@ -1,8 +1,0 @@
-@startuml
-class CppLesson {
-    + <<override>> Lecture() : void
-    + <<override>> Test() : void
-    + <<override>> ResultsAnnounce() : void
-}
-TemplateLesson <|-- CppLesson
-@enduml

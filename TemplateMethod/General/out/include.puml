@@ -1,0 +1,4 @@
+@startuml
+!include .\\.\AbstractClass.puml
+!include .\\.\ConcreteClass.puml
+@enduml

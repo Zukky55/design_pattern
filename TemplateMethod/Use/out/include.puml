@@ -1,7 +1,9 @@
 @startuml
 !include .\\.\CppLesson.puml
-!include .\\.\CSharpLesson.puml
+!include .\\.\RookieTeacher.puml
 !include .\\.\TemplateLesson.puml
-!include .\\.\UnityLesson.puml
 !include .\\.\UnrealEngineLesson.puml
+
+RookieTeacher -> UnrealEngineLesson: uses
+RookieTeacher -> CppLesson: uses
 @enduml

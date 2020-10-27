@@ -1,0 +1,7 @@
+@startuml
+class ConcreteClass {
+    # <<override>> method01() : void
+    # <<override>> method02() : void
+}
+AbstractClass <|-- ConcreteClass
+@enduml
