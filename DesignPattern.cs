@@ -2,6 +2,7 @@
 using Singleton;
 using UseTM = TemplateMethod.Use;
 using NotUseTM = TemplateMethod.NotUse;
+using UseFacade = Facade.Use;
 
 class DesignPattern
 {
@@ -42,5 +43,10 @@ class DesignPattern
         var use2 = UseSingleton.GetInstance();
         Console.WriteLine($"{typeof(UseSingleton)}のインスタンスID: {use2.GetInstanceID()}");
         Console.WriteLine($"Same instance?: {use1 == use2}");
+    }
+
+    private void ExamoleFacade(){
+        var sando = new UseFacade.Sando();
+        sando.TripToFindBook();
     }
 }
