@@ -1,0 +1,5 @@
+@startuml
+class ClassB {
+    + b() : void
+}
+@enduml

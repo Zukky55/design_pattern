@@ -1,0 +1,7 @@
+@startuml
+!include .\\.\Book.puml
+!include .\\.\BookList.puml
+!include .\\.\LendingBook.puml
+!include .\\.\Librarian.puml
+!include .\\.\Sando.puml
+@enduml

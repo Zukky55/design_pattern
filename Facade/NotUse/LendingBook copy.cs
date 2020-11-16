@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Facade.Use
+namespace Facade.NotUse
 {
     public class LendingBook
     {

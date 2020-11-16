@@ -1,0 +1,7 @@
+@startuml
+class LendingBook {
+    - lendingList : List<string>
+    + LendingBook(lendingList:string[])
+    + IsLending(bookName:string) : bool
+}
+@enduml

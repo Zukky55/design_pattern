@@ -1,0 +1,8 @@
+@startuml
+class Librarian {
+    bookList : BookList
+    lendingBook : LendingBook
+    + Librarian()
+    + SearchBook(bookName:string, book:Book) : bool
+}
+@enduml

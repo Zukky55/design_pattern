@@ -1,4 +1,4 @@
-namespace Facade.Use
+namespace Facade.NotUse
 {
     public class Book
     {

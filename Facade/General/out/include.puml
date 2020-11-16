@@ -1,0 +1,7 @@
+@startuml
+!include .\\.\ClassA.puml
+!include .\\.\ClassB.puml
+!include .\\.\ClassC.puml
+!include .\\.\Client.puml
+!include .\\.\Facade.puml
+@enduml

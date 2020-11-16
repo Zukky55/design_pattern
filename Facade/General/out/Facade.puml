@@ -1,0 +1,8 @@
+@startuml
+class Facade {
+    - classA : ClassA
+    - classB : ClassB
+    - classC : ClassC
+    + Order() : object
+}
+@enduml

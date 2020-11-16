@@ -1,0 +1,8 @@
+@startuml
+class BookList {
+    - bookList : List<Book>
+    - keepedBook : Book
+    + BookList(bookNames:string[])
+    + SearchBook(bookName:string, foundBook:Book) : bool
+}
+@enduml
