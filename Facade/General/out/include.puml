@@ -1,7 +1,15 @@
 @startuml
+
 !include .\\.\ClassA.puml
 !include .\\.\ClassB.puml
 !include .\\.\ClassC.puml
 !include .\\.\Client.puml
 !include .\\.\Facade.puml
+
+Client -- Facade : Request > 
+Client -- Facade : Return result < 
+
+Facade "1" o-- ClassA : Use >
+Facade "1" o-- ClassB: Use >
+Facade "1" o-- ClassC: Use >
 @enduml

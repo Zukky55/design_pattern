@@ -2,6 +2,10 @@
 !include .\\.\Book copy.puml
 !include .\\.\BookList copy.puml
 !include .\\.\LendingBook copy.puml
-!include .\\.\Librarian copy.puml
 !include .\\.\Sando.puml
+
+Sando -- BookList : Check lending state that book. >
+Sando -- LendingBook : Check Exist that book. >
+BookList "1"*--"0...n" Book : Own >
+
 @enduml

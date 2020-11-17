@@ -3,6 +3,7 @@ using Singleton;
 using UseTM = TemplateMethod.Use;
 using NotUseTM = TemplateMethod.NotUse;
 using UseFacade = Facade.Use;
+using NotUseFacade = Facade.NotUse;
 
 class DesignPattern
 {
@@ -10,9 +11,9 @@ class DesignPattern
     {
         DesignPattern dp = new DesignPattern();
         // dp.PlaySingleton();
-
-        dp.ExampleTemplateMethod();
-
+        // dp.ExampleTemplateMethod();
+        dp.ExampleFacade();
+        
     }
 
     private void ExampleTemplateMethod()
@@ -45,8 +46,12 @@ class DesignPattern
         Console.WriteLine($"Same instance?: {use1 == use2}");
     }
 
-    private void ExamoleFacade(){
-        var sando = new UseFacade.Sando();
-        sando.TripToFindBook();
+    private void ExampleFacade(){
+        Console.WriteLine($"======\n");
+        var notFacadeSando = new NotUseFacade.Sando();
+        notFacadeSando.TripToFindBook();
+        Console.WriteLine($"======\n");
+        var facadeSando = new UseFacade.Sando();
+        facadeSando.TripToFindBook();
     }
 }

@@ -1,7 +1,12 @@
-@startuml
+@startuml name UseFacade
 !include .\\.\Book.puml
 !include .\\.\BookList.puml
 !include .\\.\LendingBook.puml
 !include .\\.\Librarian.puml
 !include .\\.\Sando.puml
+
+Sando -- Librarian : Request book >
+Librarian -- BookList : Check Exist that book. >
+BookList "1"*--"0...n" Book : Own >
+Librarian -- LendingBook : Check lending state that book. >
 @enduml

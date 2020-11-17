@@ -16,26 +16,31 @@ namespace Facade.Use
             };
 
             bookList = new BookList(bookNames);
-            lendingBook = new LendingBook(bookNames[2]);
+            lendingBook = new LendingBook(bookNames[1]);
         }
 
         public bool SearchBook(string bookName,out Book book)
         {
+                Console.WriteLine($"librarian: 蔵書check...");
             var isExist = bookList.SearchBook(bookName,out book);
             if (!isExist)
             {
-                Console.WriteLine($"蔵書されていません。");
+                Console.WriteLine($"librarian: 蔵書されていません。");
                 return false;
             }
+            else{
+                Console.WriteLine($"librarian: 蔵書されてた！");
+            }
 
+                Console.WriteLine($"librarian: 貸出check...");
             var isLending = lendingBook.IsLending(bookName);
             if (isLending)
             {
-                Console.WriteLine($"貸出中です。");
+                Console.WriteLine($"librarian: 貸出中です。");
                 return false;
             }
 
-            Console.WriteLine($"ありました！はいこれ！");
+            Console.WriteLine($"librarian: ありました！はいこれ！");
             return true;
         }
     }

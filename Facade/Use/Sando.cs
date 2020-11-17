@@ -6,17 +6,17 @@ namespace Facade.Use
     {
         public void TripToFindBook()
         {
-            Console.WriteLine($"あー、ファサードパターンが書いてある本ほしいなぁ。そうだ、図書館に行こう！");
+            Console.WriteLine($"sando: あー、ファサードパターンが書いてある本ほしいなぁ。そうだ、図書館に行こう！");
             var librarian = new Librarian();
-            Console.WriteLine("スタッフさん！この本さがして！");
+            Console.WriteLine("sando: スタッフさん！この本さがして！");
             Book book =null;    
             var res =librarian.SearchBook("The Facade Pattern",out book);
 
             if(res){
-                Console.WriteLine($"やったー！{book.Name}みつかった！さんきゅー！");
+                Console.WriteLine($"sando: やったー！{book.Name}みつかった！さんきゅー！");
             }
             else{
-                Console.WriteLine($"ないんかーい。かなしみ。");
+                Console.WriteLine($"sando: ないんかーい。かなしみ。");
             }
         }
     }

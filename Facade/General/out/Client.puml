@@ -1,5 +1,5 @@
 @startuml
 class Client {
-    + TakeSomething() : void
+    + Request() : void
 }
 @enduml
